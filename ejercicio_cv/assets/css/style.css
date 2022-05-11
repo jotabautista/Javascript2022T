@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #001C55;
+    color: #353A47;
     font-size: 14px;
     letter-spacing: 0.7px;
 }
@@ -39,7 +39,7 @@ h3::before {
     width: 60px;
     height: 5px;
     display: block;
-    background-color: #001C55;
+    background-color: #84B082;
     position: absolute;
     bottom: -10px;
 }
@@ -57,7 +57,7 @@ article {
     min-height: 842px;
 
     margin: 0 auto;
-    background-color: #E9F1F7;
+    background-color: #F3F9E3;
     /*outline: rgb(90, 88, 88)  double  5px;*/
 }
 
