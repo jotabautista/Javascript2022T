@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #001C55;
+    letter-spacing: 0.7px;
+    background-color:#FFFCF9;
+
+}
+
+.font-size-rem {
+    font-size: 1.5rem /* 1rem = 14px*/;
+}
+
+.div-padre-fuentes-em {
+    font-size: 23px
+}
+
+.font-size-em {
+    font-size: 1.5em /* 1em = 23px */;
+}
+
+.ancho-pantalla {
+    background-color: #26547C;
+    color: #fff;
+    width: 50vw;
+    height: 50vh;
+}
+
+/* EJEMPLOS FLEXBOX */
+section {
+    flex-grow: 1;
+}
+
+.contenedor {
+    width: 80vw;
+    height: 10vh;
+    resize: both;
+    overflow: scroll;
+    background-color: #C8BFD9;
+}
+
+.item {
+    background-color: #26547C;
+    color: #fff;
+}
+
+.caja {
+    width: 200px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.centar {
+    justify-content: center;
+}
+
+.derecha {
+    justify-content: right;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+
+.listado-posts {
+    margin: 16px auto;
+    width: 80vw;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+   min-width: 300px;
+   min-height: 50px;
+   border-radius: 5px;
+   box-shadow: 1px 3px 3px 0px #222222;
+   margin: 8px;
+   padding: 8px;
+   
+}

@@ -1,0 +1,27 @@
+.caja {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #6D597A;
+
+    /* Dimensiones*/
+    width: 350px;
+    height: 350px;
+
+    /* Espacio con margenes */
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.input-group {
+    /* border-style: solid;
+    border-width: 3px;
+    border-color: red; */
+
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
