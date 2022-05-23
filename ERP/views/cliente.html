@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta htt="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="js/cliente.js"></script>
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+        <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+        <title>ERP Api</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Proyecto ERP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="clientes">Clientes</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>        
+        <main class="container">
+            <section class="row">
+                <article class="col">
+                 <form id="cliente-form" class="g-3 needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        <div class="invalid-feedback">Por favor digital el nombre.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" required>
+                        <div class="invalid-feedback">Por favor digital el apellido.</div>
+                    </div>     
+                    <div class="col-md-4">
+                      <label for="genero" class="form-label">Genero</label>
+                      <select id="genero" name="genero" class="form-select" required>
+                        <option selected disabled value="">Elegir opcion</option>
+                        <option value="Male">Masculino</option>
+                        <option value="Female">Femenino</option>
+                      </select>
+                      <div class="invalid-feedback">Por favor elegir opcion.</div>
+                    </div>                                                        
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="name@example.com" required>
+                        <div class="invalid-feedback">Por favor digital el correo.</div>
+                     </div>
+                     <div class="mb-3">
+                        <label for="direccion" class="form-label">Direccion</label>
+                        <textarea class="form-control" id="direccion" name="direccion" rows="3" required></textarea>
+                        <div class="invalid-feedback">Por favor digital la direccion.</div>
+                     </div> 
+                     <button type="submit" class="btn btn-success">Guardar</button>                    
+                 </form>   
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
