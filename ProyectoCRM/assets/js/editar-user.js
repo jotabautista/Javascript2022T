@@ -1,6 +1,6 @@
 window.addEventListener("load", event=> {
     const id = getParam("id");
-    callAPI(`${url}/${id}`, "GET", {})
+    callAPI(`${url}/user/${id}`, "GET", {})
     .then( user => {
         const userForm = document.querySelector("#user-form")
         userForm.elements["id"].value = user.id
@@ -22,7 +22,7 @@ function guardaruser(event) {
         password: inputs["password"].value,
     }
 
-    callAPI(`${url}/${user.id}`, "PUT", user)
+    callAPI(`${url}/user/${user.id}`, "PUT", user)
     .then( () => {
         if (confirm(`Desea volver al listado de Usuario?`)) {
             window.history.back()

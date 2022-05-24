@@ -1,16 +1,16 @@
 window.addEventListener("load", event=> {
-    callAPI(`${url}/user`, "GET", {}).then( user => {
-        const elementoListado = document.querySelector("#listado-usuarios")
+    callAPI(`${url}/customer`, "GET", {}).then( customer => {
+        const elementoListado = document.querySelector("#listado-customer")
 
-        user.forEach(user => {
+        customer.forEach(customer => {
             const elemtPost = document.createElement("li")
             const link = document.createElement("a")
             const buttonBorrar = document.createElement("button")
             buttonBorrar.classList.add("btn","btn-danger", "btn-sm")
             buttonBorrar.textContent = "Borrar"
-            agregarEventoBorrarCliente(buttonBorrar, user)
-            link.href = `editar-user?id=${user.id}`
-            link.textContent = `Id: ${user.id} | Nombre: ${user.name} | UserName: ${user.username}.`
+            agregarEventoBorrarCustomer(buttonBorrar, customer)
+            link.href = `editar-customer?id=${customer.id}`
+            link.textContent = `Id: ${customer.id} | Nombre: ${customer.name} | Correo: ${customer.email}.`
             elemtPost.appendChild(link)
             elementoListado.appendChild(elemtPost)
             elementoListado.appendChild(buttonBorrar)
@@ -18,10 +18,10 @@ window.addEventListener("load", event=> {
     })
 })
 
-function agregarEventoBorrarCliente(button, user) {
+function agregarEventoBorrarCustomer(button, customer) {
     button.addEventListener("click", event=> {
-        if(confirm(`Desea borrar el usuario ${user.name}?`)) {
-            callAPI(`${url}/user/${user.id}`, "DELETE", {})
+        if(confirm(`Desea borrar el cliente ${customer.name}?`)) {
+            callAPI(`${url}/customer/${customer.id}`, "DELETE", {})
             .then( ()=> window.location.reload())
         }
     })

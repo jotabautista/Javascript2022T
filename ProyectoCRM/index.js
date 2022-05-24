@@ -22,6 +22,16 @@ app.get('/editar-user',function(req,res,){
 app.get('/login',function(req,res,){
     res.sendFile(__dirname+"/views/login.html")
 });
+app.get('/customer',function(req,res,){
+    res.sendFile(__dirname+"/views/customer.html")
+});
 
+app.get('/insertar-customer',function(req,res,){
+    res.sendFile(__dirname+"/views/insertar-customer.html")
+});
+
+app.get('/editar-customer',function(req,res,){
+    res.sendFile(__dirname+"/views/editar-customer.html")
+});
 app.listen(3200);
 console.log("http://localhost:3200");

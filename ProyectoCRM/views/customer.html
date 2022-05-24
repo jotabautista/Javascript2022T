@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="js/main.js"></script>
-    <script defer src="js/insertar-user.js"></script>
+    <script defer src="js/listado-customer.js"></script>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <script defer src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Listado Usuario</title>
+    <title>Listado Cliente</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
@@ -27,7 +27,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="customer">Cliente</a>
-              </li>                 
+              </li>                
             </ul>
           </div>
         </div>
@@ -35,26 +35,9 @@
     <main class="container">
         <section class="row">
             <article class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <form id="user-form">
-                            <input type="hidden" name="id" id="id">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="name" name="name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="username" class="form-label">User Name</label>
-                                <input type="text" class="form-control" id="username" name="username">
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="text" class="form-control" id="password" name="password">
-                            </div>
-                            <button type="submit" class="btn btn-success">Guardar</button>
-                        </form>
-                    </div>
-                </div>
+                <h3>Listado Cliente</h3>
+                <a href="insertar-customer">Agregar Cliente</a>
+                <ul id="listado-customer"></ul>  
             </article>
         </section>
     </main>

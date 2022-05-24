@@ -10,7 +10,7 @@ function guardaruser(event) {
         password: inputs["password"].value,
     }
 
-    callAPI(`${url}`, "POST", user)
+    callAPI(`${url}/user`, "POST", user)
     .then( () => {
         if (confirm(`Desea volver al listado de Usuario?`)) {
             window.history.back()

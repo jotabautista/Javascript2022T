@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="js/main.js"></script>
-    <script defer src="js/insertar-user.js"></script>
+    <script defer src="js/insertar-customer.js"></script>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <script defer src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Listado Usuario</title>
+    <title>Insertar Cliente</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">Proyecto CRM</a>
+          <a class="navbar-brand" href="/index.html">Proyecto CRM</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,7 +27,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="customer">Cliente</a>
-              </li>                 
+              </li>                
             </ul>
           </div>
         </div>
@@ -37,19 +37,19 @@
             <article class="col">
                 <div class="card">
                     <div class="card-body">
-                        <form id="user-form">
+                        <form id="customer-form">
                             <input type="hidden" name="id" id="id">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nombre</label>
                                 <input type="text" class="form-control" id="name" name="name">
                             </div>
                             <div class="mb-3">
-                                <label for="username" class="form-label">User Name</label>
-                                <input type="text" class="form-control" id="username" name="username">
+                                <label for="email" class="form-label">Correo</label>
+                                <input type="email" class="form-control" id="email" name="email">
                             </div>
                             <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="text" class="form-control" id="password" name="password">
+                                <label for="address" class="form-label">Direccion</label>
+                                <textarea name="address" class="form-control"  id="address" cols="30" rows="3"></textarea>
                             </div>
                             <button type="submit" class="btn btn-success">Guardar</button>
                         </form>

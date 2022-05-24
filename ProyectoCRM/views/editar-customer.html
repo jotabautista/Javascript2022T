@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="js/main.js"></script>
-    <script defer src="js/insertar-user.js"></script>
+    <script defer src="js/editar-customer.js"></script>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <script defer src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Listado Usuario</title>
+    <title>Editar Cliente</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
@@ -37,19 +37,20 @@
             <article class="col">
                 <div class="card">
                     <div class="card-body">
-                        <form id="user-form">
+                        <form id="customer-form">
                             <input type="hidden" name="id" id="id">
+                            <input type="hidden" name="createdAt" id="createdAt">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nombre</label>
                                 <input type="text" class="form-control" id="name" name="name">
                             </div>
                             <div class="mb-3">
-                                <label for="username" class="form-label">User Name</label>
-                                <input type="text" class="form-control" id="username" name="username">
+                                <label for="email" class="form-label">Correo</label>
+                                <input type="email" class="form-control" id="email" name="email">
                             </div>
                             <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="text" class="form-control" id="password" name="password">
+                                <label for="address" class="form-label">Password</label>
+                                <textarea name="address" class="form-control"  id="address" cols="30" rows="3"></textarea>
                             </div>
                             <button type="submit" class="btn btn-success">Guardar</button>
                         </form>
