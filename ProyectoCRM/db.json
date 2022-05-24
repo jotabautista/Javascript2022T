@@ -1,0 +1,191 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Sarena Cremin",
+      "username": "scremin0",
+      "password": "MoKJ7GRtqon7"
+    },
+    {
+      "id": 2,
+      "name": "Delphine Syddon",
+      "username": "DSyddon",
+      "password": "123456"
+    },
+    {
+      "id": 3,
+      "name": "Randie Darwood",
+      "username": "rdarwood2",
+      "password": "ujuKOg"
+    },
+    {
+      "id": 4,
+      "name": "Josefina Twiname",
+      "username": "jtwiname3",
+      "password": "WiZ5sCaj"
+    },
+    {
+      "id": 5,
+      "name": "Terrijo Dale",
+      "username": "tdale4",
+      "password": "Qlp2odOzF0"
+    },
+    {
+      "id": 6,
+      "name": "Joel Bautista",
+      "username": "jbautista",
+      "password": "123456"
+    }
+  ],
+  "costumer": [
+    {
+      "id": 1,
+      "name": "Emmie Janson",
+      "email": "ejanson0@edublogs.org",
+      "address": "8111 Kedzie Avenue",
+      "createdAt": "2021-11-16"
+    },
+    {
+      "id": 2,
+      "name": "Hodge Readshall",
+      "email": "hreadshall1@globo.com",
+      "address": "31 Knutson Circle",
+      "createdAt": "2022-04-13"
+    },
+    {
+      "id": 3,
+      "name": "Bobinette Cashen",
+      "email": "bcashen2@angelfire.com",
+      "address": "5 Crownhardt Pass",
+      "createdAt": "2021-01-10"
+    },
+    {
+      "id": 4,
+      "name": "Umberto Yve",
+      "email": "uyve3@hud.gov",
+      "address": "338 Lillian Junction",
+      "createdAt": "2021-07-17"
+    },
+    {
+      "id": 5,
+      "name": "Aimee Di Franceschi",
+      "email": "adi4@jugem.jp",
+      "address": "37 Jackson Parkway",
+      "createdAt": "2021-03-12"
+    },
+    {
+      "id": 6,
+      "name": "West Whimper",
+      "email": "wwhimper5@yahoo.com",
+      "address": "840 Sachs Way",
+      "createdAt": "2021-04-28"
+    },
+    {
+      "id": 7,
+      "name": "Whittaker Bertram",
+      "email": "wbertram6@bluehost.com",
+      "address": "664 Tennessee Plaza",
+      "createdAt": "2021-04-11"
+    },
+    {
+      "id": 8,
+      "name": "John Angell",
+      "email": "jangell7@japanpost.jp",
+      "address": "8 Clarendon Hill",
+      "createdAt": "2021-09-25"
+    },
+    {
+      "id": 9,
+      "name": "Tris Cluff",
+      "email": "tcluff8@globo.com",
+      "address": "4 Tennessee Park",
+      "createdAt": "2021-09-23"
+    },
+    {
+      "id": 10,
+      "name": "Davon Salkild",
+      "email": "dsalkild9@g.co",
+      "address": "148 Forest Run Hill",
+      "createdAt": "2021-11-23"
+    },
+    {
+      "id": 11,
+      "name": "Byran Fever",
+      "email": "bfevera@dedecms.com",
+      "address": "54 Caliangt Plaza",
+      "createdAt": "2022-03-12"
+    },
+    {
+      "id": 12,
+      "name": "Anna-diane Pierrepont",
+      "email": "apierrepontb@paginegialle.it",
+      "address": "398 Scoville Place",
+      "createdAt": "2021-12-04"
+    },
+    {
+      "id": 13,
+      "name": "Chelsea Walden",
+      "email": "cwaldenc@shareasale.com",
+      "address": "79012 Magdeline Junction",
+      "createdAt": "2021-02-24"
+    },
+    {
+      "id": 14,
+      "name": "Gwennie Crichten",
+      "email": "gcrichtend@uol.com.br",
+      "address": "13 Mallard Pass",
+      "createdAt": "2021-04-26"
+    },
+    {
+      "id": 15,
+      "name": "Charlena Prettyjohn",
+      "email": "cprettyjohne@nsw.gov.au",
+      "address": "0141 Pawling Circle",
+      "createdAt": "2022-03-11"
+    },
+    {
+      "id": 16,
+      "name": "Mellisent Tabb",
+      "email": "mtabbf@blogspot.com",
+      "address": "15004 Milwaukee Place",
+      "createdAt": "2021-08-21"
+    },
+    {
+      "id": 17,
+      "name": "Rab McCotter",
+      "email": "rmccotterg@cmu.edu",
+      "address": "5 Iowa Plaza",
+      "createdAt": "2021-08-18"
+    },
+    {
+      "id": 18,
+      "name": "Philip Castagnone",
+      "email": "pcastagnoneh@cnet.com",
+      "address": "961 Golf Point",
+      "createdAt": "2021-05-11"
+    },
+    {
+      "id": 19,
+      "name": "Wenonah Elldred",
+      "email": "welldredi@slate.com",
+      "address": "0 Boyd Road",
+      "createdAt": "2022-04-18"
+    },
+    {
+      "id": 20,
+      "name": "Granny Polo",
+      "email": "gpoloj@mediafire.com",
+      "address": "8825 Glendale Parkway",
+      "createdAt": "2022-02-19"
+    }
+  ],
+  "interaction": [
+    {
+      "id": 1,
+      "note": "pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit",
+      "createdAt": "2021-09-07",
+      "user": null,
+      "costumer": null
+    }
+  ]
+}
