@@ -9,9 +9,8 @@ function buscaruser(event) {
         password: inputs["password"].value,
     }
 
-    callAPI(`${url}?username=${user.username}&password=${user.password}`, "GET", {})
+    callAPI(`${url}/user?username=${user.username}&password=${user.password}`, "GET", {})
     .then( user => {
-        console.log(user);
         if (user.length === 0){
             Swal.fire({
                 title: 'Proyecto CRM',
