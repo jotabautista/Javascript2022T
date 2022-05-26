@@ -25,7 +25,7 @@ function guardaruser(event) {
     callAPI(`${url}/user/${user.id}`, "PUT", user)
     .then( () => {
         if (confirm(`Desea volver al listado de Usuario?`)) {
-            window.history.back()
+            window.location.href ="user"
         }
     })    
 }

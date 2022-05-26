@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="js/main.js"></script>
-    <script defer src="js/insertar-customer.js"></script>
+    <script defer src="js/listado-interaction.js"></script>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <script defer src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Insertar Cliente</title>
+    <title>Listado Interaccion</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
@@ -27,37 +27,32 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="customer">Cliente</a>
-          </li>   
+          </li>  
           <li class="nav-item">
             <a class="nav-link" href="interaction">Interaccion</a>
-          </li>                         
+          </li>                          
         </ul>
       </div>
     </div>
-  </nav>   
+  </nav>     
     <main class="container">
         <section class="row">
             <article class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <form id="customer-form">
-                            <input type="hidden" name="id" id="id">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="name" name="name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Correo</label>
-                                <input type="email" class="form-control" id="email" name="email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Direccion</label>
-                                <textarea name="address" class="form-control"  id="address" cols="30" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-success">Guardar</button>
-                        </form>
-                    </div>
-                </div>
+                <h3>Listado Interaccion</h3>
+                <a href="insertar-interaction" class="btn btn-success btn-sm">Agregar</a>
+                <table class="table table-striped" id="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Id</th>
+                      <th scope="col">Fecha</th>
+                      <th scope="col">Usuario</th>
+                      <th scope="col">Cliente</th>
+                      <th scope="col">Nota</th>
+                    </tr>
+                  </thead>
+                  <tbody id="body">
+                  </tbody>
+                </table> 
             </article>
         </section>
     </main>

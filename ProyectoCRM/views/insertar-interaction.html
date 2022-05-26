@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="js/main.js"></script>
-    <script defer src="js/insertar-customer.js"></script>
+    <script defer src="js/insertar-interaction.js"></script>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <script defer src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Insertar Cliente</title>
@@ -40,19 +40,19 @@
             <article class="col">
                 <div class="card">
                     <div class="card-body">
-                        <form id="customer-form">
+                        <form id="interaction-form">
                             <input type="hidden" name="id" id="id">
                             <div class="mb-3">
-                                <label for="name" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="name" name="name">
+                                <label for="user" class="form-label">Usuario</label>
+                                <input type="text" class="form-control" id="user" name="user">
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label">Correo</label>
-                                <input type="email" class="form-control" id="email" name="email">
+                                <label for="customer" class="form-label">Cliente</label>
+                                <input type="text" class="form-control" id="customer" name="customer">
                             </div>
                             <div class="mb-3">
-                                <label for="address" class="form-label">Direccion</label>
-                                <textarea name="address" class="form-control"  id="address" cols="30" rows="3"></textarea>
+                                <label for="note" class="form-label">Nota</label>
+                                <textarea name="note" class="form-control"  id="note" cols="30" rows="3"></textarea>
                             </div>
                             <button type="submit" class="btn btn-success">Guardar</button>
                         </form>

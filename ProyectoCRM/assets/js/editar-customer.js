@@ -27,7 +27,7 @@ function guardarcustomer(event) {
     callAPI(`${url}/customer/${customer.id}`, "PUT", customer)
     .then( () => {
         if (confirm(`Desea volver al listado de cliente?`)) {
-            window.history.back()
+            window.location.href = "customer"
         }
     })    
 }

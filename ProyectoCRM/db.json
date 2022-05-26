@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Sarena Cremin",
       "username": "scremin",
-      "password": "MoKJ7GRtqon7"
+      "password": "7878798789"
     },
     {
       "id": 2,
@@ -15,14 +15,8 @@
     {
       "id": 3,
       "name": "Randie Darwood",
-      "username": "rdarwood2",
+      "username": "rdarwood",
       "password": "ujuKOg"
-    },
-    {
-      "id": 4,
-      "name": "Josefina Twiname",
-      "username": "jtwiname3",
-      "password": "WiZ5sCaj"
     },
     {
       "id": 6,
@@ -32,9 +26,21 @@
     },
     {
       "id": 7,
-      "name": "Manuel Reyes",
-      "username": "mreyes",
-      "password": "123456"
+      "name": "Ariela Reyes",
+      "username": "Areyes@gmail.com",
+      "password": "454545"
+    },
+    {
+      "id": 8,
+      "name": "Samuel Hernandez",
+      "username": "shernandez@gmail.com",
+      "password": "2121212"
+    },
+    {
+      "id": 9,
+      "name": "Manolo Gil",
+      "username": "mgil@gmail.com",
+      "password": "4545454"
     }
   ],
   "customer": [
@@ -84,7 +90,7 @@
       "id": 8,
       "name": "Yasiel Tejada",
       "email": "Ytejada@hotmail.com",
-      "address": "Yaguate",
+      "address": "Yaguate ",
       "createdAt": "2022-05-24"
     }
   ],
@@ -93,8 +99,26 @@
       "id": 1,
       "note": "pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit",
       "createdAt": "2021-09-07",
-      "user": null,
-      "costumer": null
+      "customer": {
+        "id": 1,
+        "name": "Emmie Janson",
+        "email": "ejanson0@edublogs.org",
+        "address": "8111 Kedzie Avenue",
+        "createdAt": "2021-11-16"
+      },
+      "user": {
+        "id": 6,
+        "name": "Joel Bautista",
+        "username": "jbautista",
+        "password": "123456"
+      }
+    },
+    {
+      "id": 2,
+      "note": "weeww",
+      "user": "Joel Bautista",
+      "customer": {},
+      "createdAt": "2022-05-26"
     }
   ]
 }
