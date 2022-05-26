@@ -40,17 +40,44 @@ window.addEventListener("load", event=> {
 
 function agregarEventoBorrarUser(button, user) {
     button.addEventListener("click", event=> {
-        if(confirm(`Desea borrar el usuario ${user.name}?`)) {
-            callAPI(`${url}/user/${user.id}`, "DELETE", {})
-            .then( ()=> window.location.reload())
-        }
+        // if(confirm(`Desea borrar el usuario ${user.name}?`)) {
+        //     callAPI(`${url}/user/${user.id}`, "DELETE", {})
+        //     .then( ()=> window.location.reload())
+        // }
+        Swal.fire({
+            title: `Esta seguro que desea borrar el usuario ${user.name}?`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si'          
+          }).then((result)=>{
+            if (result.isConfirmed) {
+                callAPI(`${url}/user/${user.id}`, "DELETE", {})
+                .then( ()=> {
+                    window.location.reload()
+                })                                
+              }           
+          });          
     })
 }
 
 function agregarEventoEditarUser(button, user) {
     button.addEventListener("click", event=> {
-        if(confirm(`Desea editar el usuario ${user.name}?`)) {
-           window.location.href = `editar-user?id=${user.id}`
-        }
+        // if(confirm(`Desea editar el usuario ${user.name}?`)) {
+        //    window.location.href = `editar-user?id=${user.id}`
+        // }
+        Swal.fire({
+            title: `Desea editar el usuario ${user.name}?`,
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si'          
+          }).then((result)=>{
+            if (result.isConfirmed) {
+                window.location.href = `editar-user?id=${user.id}`
+              }           
+          });               
     })
 }

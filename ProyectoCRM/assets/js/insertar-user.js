@@ -12,9 +12,21 @@ function guardaruser(event) {
 
     callAPI(`${url}/user`, "POST", user)
     .then( () => {
-        if (confirm(`Desea volver al listado de Usuario?`)) {
-            window.location.href ="user"
-        }
+        // if (confirm(`Desea volver al listado de Usuario?`)) {
+        //     window.location.href ="user"
+        // }
+        Swal.fire({
+            title: `Desea volver al listado de Usuario?`,
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si'          
+          }).then((result)=>{
+            if (result.isConfirmed) {
+                window.location.href = `user`                              
+              }           
+          });   
     })    
 }
 

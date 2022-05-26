@@ -46,17 +46,44 @@ window.addEventListener("load", event=> {
 
 function agregarEventoBorrarcustomer(button, customer) {
     button.addEventListener("click", event=> {
-        if(confirm(`Desea borrar el usuario ${customer.name}?`)) {
-            callAPI(`${url}/customer/${customer.id}`, "DELETE", {})
-            .then( ()=> window.location.reload())
-        }
+        // if(confirm(`Desea borrar el usuario ${customer.name}?`)) {
+        //     callAPI(`${url}/customer/${customer.id}`, "DELETE", {})
+        //     .then( ()=> window.location.reload())
+        // }
+        Swal.fire({
+            title: `Desea borrar la interaccion ${customer.name}?`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si'          
+          }).then((result)=>{
+            if (result.isConfirmed) {
+                callAPI(`${url}/customer/${customer.id}`, "DELETE", {})
+                .then( ()=> {
+                    window.location.reload()
+                })                                
+              }           
+          });              
     })
 }
 
 function agregarEventoEditarcustomer(button, customer) {
     button.addEventListener("click", event=> {
-        if(confirm(`Desea editar el usuario ${customer.name}?`)) {
-           window.location.href = `editar-customer?id=${customer.id}`
-        }
+        // if(confirm(`Desea editar el usuario ${customer.name}?`)) {
+        //    window.location.href = `editar-customer?id=${customer.id}`
+        // }
+        Swal.fire({
+            title: `Desea editar el usuario ${customer.name}?`,
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si'          
+          }).then((result)=>{
+            if (result.isConfirmed) {
+                window.location.href = `editar-customer?id=${customer.id}`                              
+              }           
+          });         
     })
 }

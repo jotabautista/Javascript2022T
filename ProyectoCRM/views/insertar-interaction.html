@@ -8,7 +8,8 @@
     <script defer src="js/insertar-interaction.js"></script>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <script defer src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Insertar Cliente</title>
+    <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <title>Insertar Interaccion</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
@@ -44,11 +45,21 @@
                             <input type="hidden" name="id" id="id">
                             <div class="mb-3">
                                 <label for="user" class="form-label">Usuario</label>
-                                <input type="text" class="form-control" id="user" name="user">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" id="user" name="user">
+                                  <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" id="btnuser" name="btnuser">Buscar</button>
+                                  </div>                                  
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="customer" class="form-label">Cliente</label>
+                                <div class="input-group">
                                 <input type="text" class="form-control" id="customer" name="customer">
+                                <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary" type="button" id="btncustomer" name="btncustomer">Buscar</button>
+                                </div>
+                              </div>
                             </div>
                             <div class="mb-3">
                                 <label for="note" class="form-label">Nota</label>

@@ -2,7 +2,7 @@ const userForm = document.querySelector("#user-form")
 
 function buscaruser(event) {
     event.preventDefault()
-
+    
     const inputs = event.target.elements;
     const user = {
         username: inputs["username"].value,
@@ -24,5 +24,21 @@ function buscaruser(event) {
         }
     })    
 }
+/*
+function  api(){
+    const datopost ="http://dphcrmdev:8043/xrmdph/Printbinary";
+    $.post(
+        datopost,
+        {
+            BLName: "BL20220202C4",
+            reportname: "joel",
+            fileformat: "PDF"
+        },
+        function (response) {
+        },
+    ).done(function () {
+       console.log("url=" + url ) ;
+    });
+}*/
 
 userForm.addEventListener("submit", buscaruser)

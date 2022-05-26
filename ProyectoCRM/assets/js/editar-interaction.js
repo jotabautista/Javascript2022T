@@ -1,3 +1,17 @@
+window.addEventListener("load", event=> {
+    const id = getParam("id");
+    callAPI(`${url}/interaction/${id}`, "GET", {})
+    .then( interaction => {
+        console.log(interaction)
+        const interactionForm = document.querySelector("#interaction-form")
+        interactionForm.elements["id"].value = interaction.id
+        interactionForm.elements["customer"].value = interaction.customer.name
+        interactionForm.elements["user"].value = interaction.user.name
+        interactionForm.elements["note"].value = interaction.note
+        interactionForm.elements["createdAt"].value = interaction.createdAt
+    })
+})
+
 const interactionForm = document.querySelector("#interaction-form")
 function guardarinteraction(event) {
     event.preventDefault()
@@ -17,7 +31,7 @@ function guardarinteraction(event) {
                 confirmButtonText: 'OK'
               });  
               return;
-        }
+        }        
         callAPI(`${url}/user?name=${username}`, "GET", {})
         .then(user => {
             if (user.length === 0){
@@ -29,7 +43,7 @@ function guardarinteraction(event) {
                     confirmButtonText: 'OK'
                   });  
                   return;
-            }            
+            }               
             var todayDate = new Date().toISOString().slice(0, 10);
             const interaction = {
                 id: inputs["id"].value,
@@ -38,8 +52,7 @@ function guardarinteraction(event) {
                 customer: customer[0],
                 createdAt: todayDate
             }
-            
-            callAPI(`${url}/interaction`, "POST", interaction)
+            callAPI(`${url}/interaction/${interaction.id}`, "PUT", interaction)
             .then( () => {
                 // if (confirm(`Desea volver al listado de interacciones?`)) {
                 //     window.location.href ="interaction"
@@ -55,10 +68,11 @@ function guardarinteraction(event) {
                     if (result.isConfirmed) {
                         window.location.href = `interaction`                              
                       }           
-                  });                  
+                  });                 
             })  
         })
     })
 }
+
 
 interactionForm.addEventListener("submit", guardarinteraction)

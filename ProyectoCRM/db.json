@@ -32,15 +32,9 @@
     },
     {
       "id": 8,
-      "name": "Samuel Hernandez",
-      "username": "shernandez@gmail.com",
-      "password": "2121212"
-    },
-    {
-      "id": 9,
-      "name": "Manolo Gil",
-      "username": "mgil@gmail.com",
-      "password": "4545454"
+      "name": "Manny Perez",
+      "username": "mparez@gmail.com",
+      "password": "123456"
     }
   ],
   "customer": [
@@ -114,10 +108,57 @@
       }
     },
     {
-      "id": 2,
-      "note": "weeww",
-      "user": "Joel Bautista",
-      "customer": {},
+      "id": 4,
+      "note": "satifactoria la llamada",
+      "user": {
+        "id": 3,
+        "name": "Randie Darwood",
+        "username": "rdarwood",
+        "password": "ujuKOg"
+      },
+      "customer": {
+        "id": 2,
+        "name": "Hodge Readshall",
+        "email": "hreadshall1@globo.com",
+        "address": "31 Knutson Circle",
+        "createdAt": "2022-04-13"
+      },
+      "createdAt": "2022-05-26"
+    },
+    {
+      "id": 5,
+      "note": "prueba final",
+      "user": {
+        "id": 6,
+        "name": "Joel Bautista",
+        "username": "jbautista",
+        "password": "123456"
+      },
+      "customer": {
+        "id": 1,
+        "name": "Emmie Janson",
+        "email": "ejanson0@edublogs.org",
+        "address": "8111 Kedzie Avenue",
+        "createdAt": "2021-11-16"
+      },
+      "createdAt": "2022-05-26"
+    },
+    {
+      "id": 7,
+      "note": "proxima llamada el 31-05-2022",
+      "user": {
+        "id": 8,
+        "name": "Manny Perez",
+        "username": "mparez@gmail.com",
+        "password": "123456"
+      },
+      "customer": {
+        "id": 7,
+        "name": "Brunilda Altagracia",
+        "email": "baltagracia@gmail.com",
+        "address": "Abreu 174, villa consuelo",
+        "createdAt": "2022-05-24"
+      },
       "createdAt": "2022-05-26"
     }
   ]

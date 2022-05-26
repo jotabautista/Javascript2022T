@@ -47,17 +47,44 @@ window.addEventListener("load", event=> {
 
 function agregarEventoBorrarinteraction(button, interaction) {
     button.addEventListener("click", event=> {
-        if(confirm(`Desea borrar la interaccion ${interaction.id}?`)) {
-            callAPI(`${url}/interaction/${interaction.id}`, "DELETE", {})
-            .then( ()=> window.location.reload())
-        }
+        // if(confirm(`Desea borrar la interaccion ${interaction.id}?`)) {
+        //     callAPI(`${url}/interaction/${interaction.id}`, "DELETE", {})
+        //     .then( ()=> window.location.reload())
+        // }
+        Swal.fire({
+            title: `Desea borrar la interaccion ${interaction.id}?`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si'          
+          }).then((result)=>{
+            if (result.isConfirmed) {
+                callAPI(`${url}/interaction/${interaction.id}`, "DELETE", {})
+                .then( ()=> {
+                    window.location.reload()
+                })                                
+              }           
+          });          
     })
 }
 
 function agregarEventoEditarinteraction(button, interaction) {
     button.addEventListener("click", event=> {
-        if(confirm(`Desea editar la interaccion ${interaction.id}?`)) {
-           window.location.href = `editar-interaction?id=${interaction.id}`
-        }
+        // if(confirm(`Desea editar la interaccion ${interaction.id}?`)) {
+        //    window.location.href = `editar-interaction?id=${interaction.id}`
+        // }
+        Swal.fire({
+            title: `Desea editar la interaccion ${interaction.id}?`,
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si'          
+          }).then((result)=>{
+            if (result.isConfirmed) {
+                window.location.href = `editar-interaction?id=${interaction.id}`                               
+              }           
+          });          
     })
 }
