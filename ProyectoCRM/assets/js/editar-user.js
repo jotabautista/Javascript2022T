@@ -1,4 +1,13 @@
 window.addEventListener("load", event=> {
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (user == null){
+        window.location.href = '/';
+    } else{
+      const welcomComponent = document.getElementById("welcomComponent")
+      console.log(welcomComponent)
+      welcomComponent.innerHTML = "Bienvenido, "+user[0].name
+    } 
+        
     const id = getParam("id");
     callAPI(`${url}/user/${id}`, "GET", {})
     .then( user => {
@@ -7,7 +16,7 @@ window.addEventListener("load", event=> {
         userForm.elements["name"].value = user.name
         userForm.elements["username"].value = user.username
         userForm.elements["password"].value = user.password
-    })
+    })  
 })
 
 const userForm = document.querySelector("#user-form")

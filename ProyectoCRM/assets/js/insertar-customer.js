@@ -1,4 +1,17 @@
 const userForm = document.querySelector("#customer-form")
+
+window.addEventListener("load", event=> {
+
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (user == null){
+        window.location.href = '/';
+    } else{
+      const welcomComponent = document.getElementById("welcomComponent")
+      console.log(welcomComponent)
+      welcomComponent.innerHTML = "Bienvenido, "+user[0].name
+    } 
+})
+
 function guardarcustomer(event) {
     event.preventDefault()
 

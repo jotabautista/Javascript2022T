@@ -35,3 +35,15 @@
 
 ## como instalar manejador de alerta
 ```npm install sweetalert2```
+
+## Como agregar iconos boostrap
+``` npm i bootstrap-icons```
+
+## Como agregar chart
+```npm install chart.js```
+
+## Como agregar jquery
+```npm i jquery```
+
+## como agregar jquery ui
+```npm i jquery-ui```

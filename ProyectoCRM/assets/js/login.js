@@ -1,4 +1,8 @@
-const userForm = document.querySelector("#user-form")
+const userForm = document.querySelector("#form-SignIn")
+
+window.addEventListener("load", event=> {
+    localStorage.removeItem('user')
+})
 
 function buscaruser(event) {
     event.preventDefault()
@@ -20,25 +24,11 @@ function buscaruser(event) {
                 confirmButtonText: 'OK'
               });  
         }else{
-            window.location.href="user";
+            //Window.localStorage
+            localStorage.setItem('user',JSON.stringify(user))
+            window.location.href="home";
         }
     })    
 }
-/*
-function  api(){
-    const datopost ="http://dphcrmdev:8043/xrmdph/Printbinary";
-    $.post(
-        datopost,
-        {
-            BLName: "BL20220202C4",
-            reportname: "joel",
-            fileformat: "PDF"
-        },
-        function (response) {
-        },
-    ).done(function () {
-       console.log("url=" + url ) ;
-    });
-}*/
 
 userForm.addEventListener("submit", buscaruser)

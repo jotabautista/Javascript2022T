@@ -4,35 +4,78 @@
         <meta charset="UTF-8">
         <meta htt="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script defer src="js/cliente.js"></script>
         <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
         <script defer src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <title>Proyecto CRM</title>
-    </head>
+        <script defer src="chart.js/dist/chart.js"></script>
+        <script src="/js/main.js"></script>      
+        <script src="/js/dashboard.js"></script>
+        <link rel="stylesheet" href="/css/dashboard.rtl.css">
+        <link href="/css/dashboard.css" rel="stylesheet">
+        <title>Home</title>
+    </head>    
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Proyecto CRM</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="user">Usuario</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="customer">Cliente</a>
-                  </li>    
-                  <li class="nav-item">
-                    <a class="nav-link" href="interaction">Interaccion</a>
-                  </li>                                 
-                </ul>
-              </div>
+      <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="home">Proyecto CRM</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search"> -->
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap">
+            <a class="nav-link px-3" href="/">Cerrar Session</a>
+          </div>
+        </div>
+      </header>  
+      <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+      
+                <li class="nav-item">
+                  <section>
+                    <img src="/images/profile.png" alt="">
+                  </section>      
+                  <section>
+                    <p id="welcomComponent"> Bienvenido, user </p>
+                  </section>                    
+                </li>      
+                <hr>      
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home">
+                    <span data-feather="home" class="align-text-bottom"></span>
+                    Home
+                  </a>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link" href="user">
+                    <span  class="align-text-bottom"></span>
+                     Usuario
+                  </a>
+                </li>   
+
+                <li class="nav-item">
+                  <a class="nav-link" href="customer">Cliente</a>
+                </li>    
+                <li class="nav-item">
+                  <a class="nav-link" href="interaction">Interaccion</a>
+                </li>                   
+              </ul>
+          </nav>
+
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <h1 class="h2">Dashboard</h1>
             </div>
-          </nav>                          
+      
+            <div>
+              <canvas id="myChart" height="200" width="500" ></canvas>
+            </div>            
+          </main>
+        </div>
+      </div>          
+                        
     </body>
+    <footer></footer>
 </html>
