@@ -7,7 +7,7 @@ window.addEventListener("load", event=> {
         const divcustomer = document.getElementById("divcustomer")
 
         divcreatedAt.style = "display: none"
-        divcustomer.style = "display: none"
+        divcustomer.style = "display: none"     
     }else{
         const inputcreatedAt = document.getElementById("createdAt");
 

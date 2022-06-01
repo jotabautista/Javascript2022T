@@ -9,7 +9,7 @@
     {
       "id": 2,
       "name": "Delphine Syddon",
-      "username": "DSyddon",
+      "username": "dsyddon",
       "password": "123456"
     },
     {
@@ -27,13 +27,25 @@
     {
       "id": 7,
       "name": "Ariela Reyes",
-      "username": "Areyes@gmail.com",
+      "username": "areyes",
       "password": "454545"
     },
     {
       "id": 8,
       "name": "Manny Perez",
-      "username": "mparez@gmail.com",
+      "username": "mparez",
+      "password": "123456"
+    },
+    {
+      "id": 9,
+      "name": "Samira Feliz",
+      "username": "sfeliz",
+      "password": "123456"
+    },
+    {
+      "id": 10,
+      "name": "Manuel Perez",
+      "username": "Mperez",
       "password": "123456"
     }
   ],
@@ -86,6 +98,13 @@
       "email": "Ytejada@hotmail.com",
       "address": "Yaguate ",
       "createdAt": "2022-05-24"
+    },
+    {
+      "id": 9,
+      "name": "Jose Manuel Contrera",
+      "email": "jcontrera@gmail.com",
+      "address": "Calle: La Filantropica #12",
+      "createdAt": "2022-05-29"
     }
   ],
   "interaction": [
@@ -160,6 +179,78 @@
         "createdAt": "2021-11-16"
       },
       "createdAt": "2022-05-29"
+    },
+    {
+      "id": 5,
+      "note": "La proxima llamada 2022-05-31",
+      "user": {
+        "id": 6,
+        "name": "Joel Bautista",
+        "username": "jbautista",
+        "password": "123456"
+      },
+      "customer": {
+        "id": 9,
+        "name": "Jose Manuel Contrera",
+        "email": "jcontrera@gmail.com",
+        "address": "Calle: La Filantropica #12",
+        "createdAt": "2022-05-29"
+      },
+      "createdAt": "2022-05-29"
+    },
+    {
+      "id": 6,
+      "note": "Pide una acuerdo de pago",
+      "user": {
+        "id": 6,
+        "name": "Joel Bautista",
+        "username": "jbautista",
+        "password": "123456"
+      },
+      "customer": {
+        "id": 9,
+        "name": "Jose Manuel Contrera",
+        "email": "jcontrera@gmail.com",
+        "address": "Calle: La Filantropica #12",
+        "createdAt": "2022-05-29"
+      },
+      "createdAt": "2022-05-29"
+    },
+    {
+      "id": 7,
+      "note": "vista el 2020-05-12",
+      "user": {
+        "id": 6,
+        "name": "Joel Bautista",
+        "username": "jbautista",
+        "password": "123456"
+      },
+      "customer": {
+        "id": 7,
+        "name": "Brunilda Altagracia",
+        "email": "baltagracia@gmail.com",
+        "address": "Abreu 174, villa consuelo",
+        "createdAt": "2022-05-24"
+      },
+      "createdAt": "2022-05-31"
+    },
+    {
+      "id": 8,
+      "note": "Lamada el 2022-05-12",
+      "user": {
+        "id": 6,
+        "name": "Joel Bautista",
+        "username": "jbautista",
+        "password": "123456"
+      },
+      "customer": {
+        "id": 7,
+        "name": "Brunilda Altagracia",
+        "email": "baltagracia@gmail.com",
+        "address": "Abreu 174, villa consuelo",
+        "createdAt": "2022-05-24"
+      },
+      "createdAt": "2022-05-31"
     }
   ]
 }
